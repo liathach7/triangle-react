@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState, useEffect} from 'react';
 
-function App() {
+export default function App() {
+  const [sum,setSum]=useState(0);
+
+  const Add=(e)=>{
+    e.preventDefault();
+    let numOne=document.querySelector('#num1').value;
+    let numTwo=document.querySelector('#num2').value;
+    let sum = parseInt(numOne) + parseInt(numTwo);
+    setSum(sum);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <center>
+      <h1>Calculator</h1>
+      <form>
+        <input type="text" id="num1"/>
+        <input type="text" id="num2"/>
+        <input type="text" id="result" value={sum} readOnly />
+        <button className="b1" onClick={Add}></button>
+      </form>
+    </center>
   );
 }
-
-export default App;
