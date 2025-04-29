@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/triangle-react/static/css/main.e4dacc5a.css",
-    "main.js": "/triangle-react/static/js/main.3f3cdcab.js",
+    "main.js": "/triangle-react/static/js/main.5a8b717f.js",
     "static/js/453.ed3810f9.chunk.js": "/triangle-react/static/js/453.ed3810f9.chunk.js",
     "index.html": "/triangle-react/index.html",
     "main.e4dacc5a.css.map": "/triangle-react/static/css/main.e4dacc5a.css.map",
-    "main.3f3cdcab.js.map": "/triangle-react/static/js/main.3f3cdcab.js.map",
+    "main.5a8b717f.js.map": "/triangle-react/static/js/main.5a8b717f.js.map",
     "453.ed3810f9.chunk.js.map": "/triangle-react/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4dacc5a.css",
-    "static/js/main.3f3cdcab.js"
+    "static/js/main.5a8b717f.js"
   ]
 }
