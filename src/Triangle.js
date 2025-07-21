@@ -8,8 +8,9 @@ function Triangle({ data, color, dis, dataNext }) {
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
   const w = 400;
-  const h = 500;
+  const h = 700;
   const yCorrect = 200;
+  const xCorrect = 150;
 
 
 
@@ -27,8 +28,8 @@ function Triangle({ data, color, dis, dataNext }) {
         .domain([0,w])
         .range([0,450]);
     const myLine = line(
-      (d) => d.x,
-      (d) => d.y - yCorrect
+      (d) => (d.x - xCorrect) * 1.5,
+      (d) => (d.y - yCorrect) * 1.5
     );
     const myLine2 = line(
       (d) => d.x + 100,
@@ -52,6 +53,21 @@ function Triangle({ data, color, dis, dataNext }) {
       var color2 = 'red';
       var color3 = 'orange';
     }    
+    if (color[0] === 'pink') {
+      var color1 = 'deeppink';
+      var color2 = 'hotpink';
+      var color3 = 'lightpink';
+    }        
+    if (color[0] === 'yellow') {
+      var color1 = 'gold';
+      var color2 = 'yellow';
+      var color3 = 'lightyellow';
+    }    
+    if (color[0] === 'purple') {
+      var color1 = 'purple';
+      var color2 = 'darkviolet';
+      var color3 = 'mediumpurple';
+    }                 
 
 
     // draw the bars
